@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sqlserver:
+    image: "microsoft/mssql-server-linux"
+    ports:
+     - "1434:1433"
+    environment:
+     - ACCEPT_EULA=Y
+     - SA_PASSWORD=ThisIs1Strong_Password
+     - MSSQL_PID=Express
